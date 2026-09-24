@@ -3,7 +3,7 @@
 Overpass 3 TryHackMe Write up A detailed walkthrough of the Overpass 3 room on TryHackMe, demonstrating enumeration, GPG decryption, exploiting FTP for a reverse shell, and leveraging an NFS no_root_squash misconfiguration for local privilege escalation.
 
 
-Phase 1: Enumeration & Reconnaissance1. 
+**Phase 1: Enumeration & Reconnaissance1.** 
 
 Port Scanning The assessment began with an Nmap scan to identify open ports and active services on the target system.
 
@@ -21,7 +21,7 @@ While reviewing the source code of the main webpage did not reveal any anomalies
 
 
 
-Phase 2: Gaining Access1. Decrypting the Backup
+**Phase 2: Gaining Access1. Decrypting the Backup**
 After downloading and unzipping backup.zip, it contained two primary files:
 
 A GPG-encrypted file.
@@ -51,7 +51,7 @@ A Meterpreter listener was configured on the attacker machine, the uploaded PHP 
 
 
 
-Phase 3: Privilege Escalation
+**Phase 3: Privilege Escalation**
 
 1. Local Enumeration
 
